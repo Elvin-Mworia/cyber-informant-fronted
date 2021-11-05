@@ -1,0 +1,56 @@
+@import "global";
+.navbar{
+    position:sticky;
+    z-index:2000;
+    height:20%;
+    background-color:$bg-primary;
+    width:100%;
+    display:flex;
+    align-items:center;
+   ;
+    h1{
+        font-size:25px;
+        color:white;
+        margin:15px;
+        font-weight:1000;
+    
+    }
+    nav{
+        display:flex;
+        margin-left:50%;
+    }
+    nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly ;
+    color:white;
+    font-size: 1rem;
+    width:40%;
+
+    a{
+        text-decoration: none;
+        list-style: none;
+        color:white;
+        
+
+    }
+    
+li{
+    
+        text-decoration: none;
+        margin:1rem 1rem;
+        list-style: none;
+        cursor: pointer;
+        font-weight:400;
+        
+        font: Helvetica, Arial, sans-serif;
+
+}
+li:hover{
+    border-bottom:2px solid white;
+}
+        
+    }
+
+}
+

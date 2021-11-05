@@ -1,0 +1,97 @@
+@import 'global';
+.display-register{
+    z-index: 900;
+    background-color:transparent;
+    opacity:1;
+    height:80%;
+    width:100%;
+
+
+}
+.register-wrapper {
+
+    background-color:#fff;
+    height:80%;
+    width:100%;
+    margin:0;
+    position: absolute;
+    z-index:1000;
+    .register{
+        position: relative;
+        margin: 1rem auto;
+       height: 350px;
+       width: 500px;
+       display:block;
+       
+       border-radius: 20px;
+       background-color: $bg-primary;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25); 
+       transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    h1{
+        position:relative;
+        display:inline-block;
+        left:25%;
+        font:$f-primary1;
+        font-size:1.5rem;
+        color:white;
+        max-width:20rem;
+        margin-top:5px;
+        
+
+    }
+    .register-form{
+        position:relative;
+       
+       display:flex;
+       flex-direction: column;
+       justify-content:center; 
+       align-items:center;
+   
+      
+      input{
+           height:2.5rem;
+           width:50%;
+           margin:.5rem auto;
+           outline:none;
+           border-radius:10px;
+           outline:none;
+           border:none;
+   
+       }
+       input:first-child{
+           margin-top:2rem;
+       }
+      
+      
+       button{
+           background-color: $bg-primary;
+           height:3rem;
+           width:6rem;
+           cursor:pointer;
+           font:$f-primary1;
+           color:white;
+           font-size:16px;
+           border-radius:5px;
+           border:none;
+           outline:none;
+           font-weight:600;
+           color:white;
+           animation:btn-anime 5s ease-in-out 2s infinite;
+       }
+       button:hover{
+           border:white 2px solid;
+           animation:none!important;
+       }
+       @keyframes btn-anime {
+           from{
+               border:none;
+           }
+           to{
+               border:white 2px dotted;
+           }
+
+       }
+   }
+   
+}
