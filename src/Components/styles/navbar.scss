@@ -2,11 +2,12 @@
 .navbar{
     position:sticky;
     z-index:2000;
-    height:20%;
+    height:10%;
     background-color:$bg-primary;
     width:100%;
     display:flex;
     align-items:center;
+    
    ;
     h1{
         font-size:25px;
@@ -17,7 +18,7 @@
     }
     nav{
         display:flex;
-        margin-left:50%;
+        margin-left:40%;
     }
     nav ul{
     display:flex;
@@ -26,6 +27,10 @@
     color:white;
     font-size: 1rem;
     width:40%;
+    #my_resources{
+        font-size:.8rem;
+        padding:.5rem;
+    }
 
     a{
         text-decoration: none;
@@ -44,6 +49,7 @@ li{
         font-weight:400;
         
         font: Helvetica, Arial, sans-serif;
+      
 
 }
 li:hover{
@@ -51,6 +57,129 @@ li:hover{
 }
         
     }
-
+.menu{
+    display:none;
+  
+}
+.sidebar-nav{
+    display:none;
 }
 
+    }
+
+@media screen and (max-width:$tablet-view){
+    nav{
+        display:none !important;
+    }
+    .menu{
+        display:flex !important;
+        font-size:3rem;
+        color:white;
+        margin-left:auto;
+        margin-right:2rem;
+    }
+    .sidebar{
+        position:absolute;
+        width:30%;
+        z-index: 500;
+        height:30rem;
+        background-color: $bg-primary;
+        right:5px;
+        top:70px;
+        border-radius:10px;
+        margin:.5rem 0;
+        .sidebar-nav{
+            display:flex;
+            flex-direction:column;
+            z-index:2000;
+            position:relative;
+            width:100%;
+            height:100%;
+             ul{
+                display:flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-evenly ;
+                list-style: none;
+                font-size: 1rem;
+                width:100%;
+                text-decoration: none;
+                a{
+                    list-style-type: none;
+                    text-decoration:none;
+                }
+                li{
+                    color:white;
+                    text-decoration:  none !important;
+                    margin:1rem 1rem;
+                    list-style: none !important;
+                    cursor: pointer;
+                    font-weight:400;
+                    font-size:1.5rem;
+                    
+                    font: Helvetica, Arial, sans-serif;
+            
+            }
+            li:hover{
+                border-bottom:2px solid white;
+            }
+                
+            }
+        }
+    
+    }
+}
+@media screen and (max-width:$mobile-view){
+    nav{
+        display:none !important;
+    }
+   
+    .sidebar{
+        position:absolute;
+        width:50%;
+        z-index: 500;
+        height:30rem;
+        background-color: $bg-primary;
+        right:5px;
+        top:70px;
+        border-radius:10px;
+        margin:.5rem 0;
+        .sidebar-nav{
+            display:flex;
+            flex-direction:column;
+            z-index:2000;
+            position:relative;
+            width:100%;
+            height:100%;
+            list-style: none;
+            text-decoration: none;
+             ul{
+                display:flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-evenly ;
+                list-style: none !important;
+                font-size: 1rem;
+                width:100%;
+                text-decoration: none !important;
+                li{
+                    color:white;
+                    text-decoration: none !important;
+                    margin:1rem 1rem;
+                    list-style: none !important;
+                    cursor: pointer;
+                    font-weight:400;
+                    font-size:1.5rem;
+                    
+                    font: Helvetica, Arial, sans-serif;
+            
+            }
+            li:hover{
+                border-bottom:2px solid white;
+            }
+                
+            }
+        }
+    
+    }
+}

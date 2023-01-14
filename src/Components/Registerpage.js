@@ -5,6 +5,8 @@ import {useHistory} from "react-router-dom";
 import * as yup from 'yup';
 import {yupResolver} from "@hookform/resolvers/yup";
 import axios from "axios";
+import {motion} from "framer-motion";
+import { animeVar,transitions } from './animationVariants';
 
 const Schema=yup.object().shape({
     Email:yup.string().email().required("Enter a valid email"),
@@ -25,21 +27,24 @@ function Registerpage() {
     const history=useHistory();
     const {register,handleSubmit,errors}=useForm({resolver:yupResolver(Schema)});
     function Submit(e){
-        const data={email:email,username:username,password:password}
-  if(data.password===confirm){
+        const data={email:email,password:password,username:username};
+       console.log(data);
   axios.post("http://localhost:3001/auth/register",data).then((res)=>{
-    console.log(res.json());
+    console.log(res);
     history.push('/Login');
         }
         ); 
  
-    }else{
-        alert("password must match");
-    }
+    
        e.preventDefault();
     }
     return (
-        <div className="register-wrapper display-register">
+        <motion.div
+        exit="out"
+        initial="initial"
+        animate="in"
+        variants={animeVar}
+        transition={transitions}  className="register-wrapper display-register">
         <div className="register">
         <h1>Pick a unique username and a password to create an account </h1>
             <form className="register-form" onSubmit={Submit}>
@@ -54,10 +59,8 @@ function Registerpage() {
         
            
         </div>
-        </div>
+        </motion.div>
     )
 }
 
 export default Registerpage;
-
-

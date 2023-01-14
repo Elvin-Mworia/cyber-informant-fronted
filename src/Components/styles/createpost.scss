@@ -46,6 +46,8 @@
         background-color:$bg-primary;
         width:6rem;
         height:3rem;
+        border-radius:5px;
+        padding:.9rem .2rem;
     }
     .input-content{
        max-width:50%;
@@ -72,4 +74,26 @@
         margin-left:60%;
     }
 
+}
+@media screen and (max-width:$mobile-view) {
+    .createpost{
+        width:100vw !important;
+        height:90% !important;
+        align-items:start!important;
+
+        
+    }
+    .createpost-form{
+        width: 100% !important;
+
+        .input-content{
+
+            width:100% !important;
+        }
+        .btn{
+            margin: 1rem auto !important;
+        }
+    }
+
+    
 }

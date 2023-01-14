@@ -11,10 +11,34 @@
   overflow:hidden;
   
 }
+::-webkit-scrollbar{
+  
+  background-color: purple;
+  width:.9rem;
+  color: white;
+
+  
+  
+
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color:rgb(50, 3, 59);
+    height:5px;
+    width:.5rem;
+    border-radius:20px;
+    margin:0 .1rem;
+    cursor:hand;
+  }
+
+
 .icon{
-  color:rgb(226, 6, 226) ;
+  color:rgb(226, 6, 226) !important ;
   cursor: pointer;
   &:hover{
     transform: scale(1.2);
+  }
+  a{
+    text-decoration: none;
+    color:rgb(226, 6, 226);
   }
 }

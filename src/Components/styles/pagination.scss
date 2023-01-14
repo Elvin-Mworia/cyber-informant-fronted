@@ -1,0 +1,43 @@
+@import "global"; 
+.pagination {
+            
+    
+    
+    ul{
+    display:flex;
+    flex-direction: row !important;
+    margin:0 auto;
+    width:50%;
+    height:3rem !important;
+    justify-content:space-between;
+    align-items:center;
+    
+    li{
+    height:1.5rem;
+    width:1.5rem;
+    color:$bg-primary;
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    cursor:pointer;
+    &:hover{
+        background-color:$bg-primary;
+      
+        a{
+
+            color:white;
+        }
+    }
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        padding:1rem;
+    }
+    }
+}
+  
+
+}

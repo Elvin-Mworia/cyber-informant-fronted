@@ -1,0 +1,59 @@
+.skeleton-wrapper{
+    background-color:#f2f2f2;
+   max-width:40rem !important;
+    border-radius:4px;
+    overflow:hidden;
+    position:relative;
+
+    .shimmer-wrapper{
+        position:absolute ;
+        top:0;
+        left:0;
+        width:100%; 
+        height:100%;
+        animation:loading 2.5s infinite;
+
+    }
+    .shimmer{
+        width:50%;
+        height:100%;
+        background:rgba(255,255,255,0.2);
+        transform:skewX(-20deg);
+box-shadow:0 0 30px 30px rgba(255,255,255,0.25 );
+
+    }
+    @keyframes loading{
+        0%{transform:translate(-150%)}
+        50%{transform:translate(-60%)}
+        100%{transform:translate(150%)}
+    }
+}
+.image{
+    margin-top: 1.3rem; 
+    height: 100%;
+    width:100%;
+    
+}
+.content1{
+    margin:0;
+    .title1{
+        height:2rem;
+        margin-bottom:0;
+        margin-left:2rem !important ;
+    }
+    .metadata1{
+        margin-bottom: 1rem;
+        margin-right:2.7rem ;
+     
+        width:50%;
+        height:4rem;
+        display:flex;
+        justify-content:space-evenly;
+        margin-left:auto;
+
+    }
+    .content-holder{
+        margin-right:1.5rem;
+        margin-left:0;
+    }
+}

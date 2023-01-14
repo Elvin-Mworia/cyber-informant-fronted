@@ -1,0 +1,24 @@
+@import 'global';
+.container-checkout-wrapper{
+    display:flex;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:85vh;
+    background-color:white;
+    margin:auto 0;
+    
+    .container-checkout{
+        width:30rem;
+        height:90%;
+        position:relative;
+        margin:1rem 30vw;
+        background-color:purple;
+        display:flex;
+        flex-direction:column;
+        align-items:start;
+        justify-content:center;
+        border-radius: 10px;
+}
+}
